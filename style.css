@@ -5,37 +5,31 @@
   margin: 0;
   padding: 0;
 }
+
 h1 , h2 , h3 {
-  font-family:'Graduate', cursive;
+  font-family: 'Ubuntu', sans-serif;
 }
 .head1{
-  font-family:'Graduate', cursive;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
   font-size: 40px;
+ 
+
 }
 p {
   font-family: 'Dosis', sans-serif;
   font-size: 20px;
-  line-height: 60px;
-  color: grey;
+  line-height: 35px;
+  color: rgba(88, 88, 88, 0.9999);
 }
 
 
-.overlay-trapezium {
-  position: relative;
-  left: 0%;
-  top: 0%;
-  transform: 
-  translate(-10% , -70%);
-  width: 500px;
-  height: 0;
-  border-bottom: 2789px solid rgb(105, 74, 74 , 0.8);
-  border-right: 100px solid transparent;
-  z-index: 3;
-}
+
   
 
   /* Make the image fully responsive */
   .carousel-item {
+    position: relative !important;
     height: 600px;
     width: 100%;
     overflow: hidden;
@@ -47,12 +41,58 @@ p {
     object-fit: cover;
    
   }
+  .black-overlay{
+    position: absolute; 
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  /*-----demo for header flex------*/
+  .header-flex{
+    position: absolute;
+    top: 20px;
+    z-index: 10;
+  }
+  #overlay-item-1{
+    position: relative;
+    top: 50px;
+    left: 50px;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    color: white;
+  }
+  #overlay-item-1 img {
+    height: 100px;
+    width: 100px;
+    
+}
+  #overlay-item-2{
+    position: relative;
+    top: 80px;
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+  #head-span{
+    font-size: 20px;
+    font-weight: bolder;
+    color: orangered ;
+    
+  }
+  
   
   /* --To style the Header Navigation*/
  
   .nav-item > a {
-    font-family: 'Graduate', cursive;
-    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
 
   }
 
@@ -61,13 +101,11 @@ p {
     color: darkblue;
     
  }
- 
+
 .navbar {
-  
   margin-bottom: 0px;
   padding: 20px 15px;
   height: 90px;
-  
   background: white;
   border-top: darkblue 2px solid;
   border-bottom: darkblue 2px solid;
@@ -96,15 +134,15 @@ p {
   display: block;
   padding: .75rem 1.25rem;
   margin-bottom: 0px !important;
-  background: orange;
+  background: orangered;
   border: none !important;
   
 }
 .list-group-item.active {
   z-index: 2;
   color: darkblue;
-  background-color: orange;
-  border-color: orange;
+  background-color: orangered;
+  border-color: orangered;
 }
 
 
@@ -117,9 +155,9 @@ p {
 
 }
 .respon-burger li{
-  font-weight: bold;
+  font-weight: normal;
 padding:5px;
-border-bottom: 1px solid white !important;
+border-bottom: .2px solid white !important;
 cursor: pointer;
 
 }
@@ -135,21 +173,16 @@ background: darkblue;
    
  }
  .sub-menu-list{
-  
-  display: flex;
   text-align: center;
-  background: #F77F00;
-  
   width:100%;
-  border-radius:7px;
-
 }
 .sub-menu-list li{
  
-  border-bottom: 1px solid white !important;
+  border-bottom: .2px solid white !important;
   cursor: pointer;
   }
   .sub-menu-list li:hover{
+    color: white;
     background: darkblue;
     }
   .hamburger{
@@ -168,13 +201,9 @@ background: darkblue;
     background: radial-gradient(white 20% , orangered 90%);
     transition: ease-in-out 2s;
   }
-  span{
-    width: 20px;
-    color: darkblue;
-  }
   aside{
     text-align: justify;
-    text-justify: inter-word;
+    
   }
 
   .footer-section{
@@ -196,19 +225,59 @@ background: darkblue;
     background: orangered;
     height: 100%;
   }
+  .white{
+    background: whitesmoke;
+    margin: 0;
+    padding:10px;
+    border: slateblue 2px solid;
+  }
   .orange-red{
     background: orangered;
     color: black;
+  }
+  .fa {
+    padding-right: 50px;
+    font-size: 40px;
+    
+  }
+ 
+  .fa:hover{
+    transform: translateY(-10px);
   }
   .fab{
     font-size: 20px;
     color: blue;
   }
+  .fas{
+    padding-right: 50px;
+    font-size: 40px;
+    color: blue;
+  }
   .fa-low-vision{
+    font-size: 40px;
+    color: crimsonS;
+  }
+  .fa-history{
     font-size: 40px;
     color: lawngreen;
   }
+  .fa-graduation-cap{
+    font-size: 40px;
+    color: orange;
+  }
+  .fa-fingerprint{
+    font-size: 40px;
+    color: fuchsia;
+  }
+.fa-vuejs{
+  padding-right: 50px;
+  font-size: 40px;
+  color: aqua ;
 
+}
+.fa-vuejs:hover{
+  transform: translateY(-10px);
+}
 
 
 
