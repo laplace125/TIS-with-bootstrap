@@ -105,7 +105,7 @@ p {
 .navbar {
   margin-bottom: 0px;
   padding: 20px 15px;
-  height: 90px;
+  height: 80px;
   background: white;
   border-top: darkblue 2px solid;
   border-bottom: darkblue 2px solid;
@@ -130,6 +130,7 @@ p {
   margin: 0px;
 }
 .list-group-item {
+  color: white;
   position: relative;
   display: block;
   padding: .75rem 1.25rem;
@@ -172,6 +173,9 @@ background: darkblue;
    font-size: 1.2em;
    
  }
+ a.active{
+   color: blue;
+ }
  .sub-menu-list{
   text-align: center;
   width:100%;
@@ -205,6 +209,20 @@ background: darkblue;
     text-align: justify;
     
   }
+  /* scroll spy*/
+  #scrolling{
+    position: relative;
+  }
+  .scrollspy-example {
+    height: 300vh;
+    }
+    /* Modal section for Admission*/
+    #modal-font-1{
+      color: red;
+    }
+    #modal-font-2{
+      color: darkblue;
+    }
 
   .footer-section{
     height: 80px;
@@ -287,8 +305,15 @@ background: darkblue;
      display: none;
 
   }
-
   
+  .black-overlay{
+    position: absolute; 
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+    
+  }
  }
 
 
