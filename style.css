@@ -13,13 +13,13 @@ h1 , h2 , h3 {
   font-family: 'Montserrat', sans-serif;
   font-weight: bolder;
   font-size: 40px;
- 
-
 }
+
+
 p {
   font-family: 'Dosis', sans-serif;
-  font-size: 20px;
-  line-height: 35px;
+  font-size: 1.2rem;
+  
   color: rgba(88, 88, 88, 0.9999);
 }
 
@@ -105,7 +105,7 @@ p {
 .navbar {
   margin-bottom: 0px;
   padding: 20px 15px;
-  height: 80px;
+  height: 60px;
   background: white;
   border-top: darkblue 2px solid;
   border-bottom: darkblue 2px solid;
@@ -202,19 +202,16 @@ background: darkblue;
 
   }
   .hamburger:hover{
-    background: radial-gradient(white 20% , orangered 90%);
+    background: radial-gradient(darkblue 50% , orangered 50%);
     transition: ease-in-out 2s;
   }
   aside{
     text-align: justify;
     
   }
-  /* scroll spy*/
-  #scrolling{
-    position: relative;
-  }
+ 
   .scrollspy-example {
-    height: 300vh;
+    height: 500vh;
     }
     /* Modal section for Admission*/
     #modal-font-1{
@@ -224,6 +221,53 @@ background: darkblue;
       color: darkblue;
     }
 
+  #portal-button{
+    padding: 5px 10px;
+    border-radius: 20px;
+    background: darkorange;
+    color: darkblue;
+    font-weight: bolder;
+    outline: transparent;
+  }
+   #footer-button{
+     color: white;
+     margin-left: 80px;
+     padding: 10px 30px;
+     border-radius: 20px;
+   }
+   .flabel{
+     width: 80px;
+   }
+   .footer-tel{
+      margin-left: 80px;
+   }
+   .contact-button{
+     margin-left: 69px;
+   }
+   .phone-button{
+     padding: 5px 10px;
+     background: greenyellow;
+     border-radius: 20px;
+     font-size: 15px;
+     font-weight: bolder;
+     outline: none;
+     border: none;
+   }
+
+   .phone-button1{
+    padding: 5px 10px;
+    background: darkblue;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bolder;
+    outline: none;
+    border: none;
+  }
+  .phone-button1 > a {
+    color: white;
+    text-decoration: none;
+  }
+   
   .footer-section{
     height: 80px;
     width: 100vw;
@@ -253,6 +297,11 @@ background: darkblue;
     background: orangered;
     color: black;
   }
+  .blue{
+    background: #2176ff;
+    color: black;
+  }
+
   .fa {
     padding-right: 50px;
     font-size: 40px;
@@ -300,7 +349,7 @@ background: darkblue;
 
 
 
- @media only screen and (max-width: 991px) {
+ @media only screen and (max-width: 1080px) {
   #nav-bar{
      display: none;
 

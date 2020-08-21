@@ -31,7 +31,7 @@
     <!-------Animate.css-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 </head>
-<body >
+<body style="position: relative;" data-spy="scroll" data-target="#scroll-about">
 
     
     <!----------image slider------------> 
@@ -56,7 +56,7 @@
     </div>
 
 
-    <div class="black-overlay">
+    
     <div class="header-flex wow animate__animated animate__fadeInLeftBig" data-wow-duration="1s" data-wow-delay="2s">
       <div id="overlay-item-1">
         <img src="./images/School-Logo1.png" alt="">
@@ -73,7 +73,7 @@
 
       </div>
   </div>
-</div>
+
     
 
 <!--------Navigation-------------->
@@ -107,7 +107,7 @@
           <a class="nav-link" href="./hostelAccomodation.html">Hostel Accomodation</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./p.t.a.html">P.T.A</a>
+          <a class="nav-link" href="./contact-us.html">Contact us</a>
         </li>
       </ul>
     </div>
@@ -132,7 +132,7 @@
                 <a href="./gallery.html"><li class="list-group-item ">Gallery </li></a>
                 <a href="./newsAndEvents.html"><li class="list-group-item ">News &amp; Events</li></a>
                 <a href="./hostelAccomodation.html"><li class="list-group-item ">Hostel Accomodation</li></a>
-                <a href="./p.t.a.html"><li class="list-group-item ">P.T.A</li></a>
+                <a href="./contact-us.html"><li class="list-group-item ">Contact Us</li></a>
             </ul>
         </div>
       </div>
@@ -151,21 +151,23 @@
               <a href="#"><li class="list-group-item">History</li></a>
               <a href="#"><li class="list-group-item">Propietor's Message</li></a>
               <a href="#"><li class="list-group-item">School Anthem</li></a>
-              <a href="#"><li class="list-group-item">Frequently Asked questions</li></a>
               <a href="#"><li class="list-group-item">Contact</li></a>
             </ul>
       </aside>
-        
+ 
         <aside class="col-lg-10 col-md-12">
             <div class="row">
               <div class="col-lg-8 col-md-12">
                 <i class="fas fa-graduation-cap"></i><span class="head1">Transatlantic International Schools</span>
                 
-            <p>Transatlantic International Schools is a Co-educational  Montessori Nursery/Primary School and an international college with a good blend of Nigerian and British curriculum in the heart of Sagamu City.
+            <p>Transatlantic International Schools is a Co-educational  Montessori Nursery , Primary School and an international college with a good blend of Nigerian and British curriculum. We are situated in the heart of Sagamu City.
               We are committed to excellence in academic pursuits and leadership skill development in our pupils/students.
               Our teachers are qualified and well trained to meet the challenges of different learners in an environment that is conducive for learning
               </p>
-                </div>
+
+
+              
+    </div>
 
        
         
@@ -174,8 +176,69 @@
               
   
           </aside>
+
+
+
+
         </div>
       </aside>
+
+      </div>
+      <!--TESTING SCROLL SPY-->
+      <div class="container-fluid" >
+          <div class="row">
+            <div id="scroll-about" class="list-group col-md-2">
+              <a class="list-group-item list-group-item-action" href="#list-item-1">History</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-2">School Anthem</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-4">Contact Us</a>
+            </div>
+            <div data-spy="scroll" data-target="#scroll-about" class="scrollspy-example  col-md-10">
+              <h4 id="list-item-1"></h4>
+              <i class="fas fa-graduation-cap"></i><span class="head1">HISTORICAL BACKGROUND</span>
+                
+              <p> 
+                Transatlantic Nursery and Primary School was established in 2016 and commenced academic activities in September of the same year.
+                The school was established out of the vision of the proponents to provide a world class academic learning in the area of early childhood and elementary education. 
+                In trying to achieve this, the school has been able to deploy world class academic curriculum and facilities that would support all round development of a child.
+                From a humble beginning in September 2016 with less than 50 pupils, Transatlantic International Nursery and Primary School has transformed to a school of choice in the country and we have grown to a population of more than 250 pupils. 
+                We have stayed true to our motto: Learning, Character and Leadership. Our academic prowess has been highly acknowledged by the humble achievements we have made in early childhood education, Nursery and Primary Education as attested to by our patrons. Our pupils have moved on to secondary schools both at home and abroad.
+                We have full complement of highly professional and dedicated teachers who are experienced in early child education ably led by the Head Teacher Mrs Ifeoma C.N Onu and Asst Head Teacher, Mrs Khadijat Oriade with a pupil to teachers’ ratio of 15:1 for Primary and 15:2 for Nursery classes. The teaching staff has a population of 26 teachers and there are 20 non-academic staff comprising of admin, care givers and janitors. 
+                Administratively the school is divided into two sections; Nursery and Primary and each section is headed by an academic supervisor.
+                We also emphasize professional development for our teachers to be able to meet the challenges of 21st century, early childhood and elementary education. Training courses in areas of Montessori Method of teaching, Jolly phonics and grammar, managing a 21st century classroom, coding to mention but few are the areas of professional development that our teachers have been exposed to.
+                </p>
+  
+              <h4 id="list-item-2">School Anthem</h4>
+              <p>Lorem, ipsum dolor.</p>
+              <p>Lorem, ipsum dolor.</p>
+              <p>Lorem, ipsum dolor.</p>
+              <p>Lorem, ipsum dolor.</p>
+              <p>Lorem, ipsum dolor.</p>
+              <p>Lorem, ipsum dolor.</p>
+              <p>Lorem, ipsum dolor.</p>
+              
+              <h4 id="list-item-4">Item 4</h4>
+              <form action="https://formspree.io/xpzynobr" method="POST" terget="_blank">
+                <label>
+                  Your email:
+                  <input type="text" name="_replyto" autofocus>
+                  
+                </label>
+                <br>
+                <label>
+                  Your message:
+                  text
+                  <textarea name="message"></textarea>
+                </label>
+                 <br>
+                <!-- your other form fields go here -->
+              
+                <button type="submit">Send</button>
+              </form>
+            </div>
+
+
+          </div>
+
 
       </div>
 
@@ -185,6 +248,16 @@
 
 
 </div>
+<!--scroll spy-->
+<script>$('body').scrollspy({ target: '#scroll-about' , offset:500})</script>
+<script>
+        $("body").attr({
+  "data-spy": "scroll",
+  "data-target": "#scroll-about"
+}).scrollspy({
+  offset: 500
+});
+</script>
 
 
  <!---Hamburger menu-->   
@@ -202,6 +275,7 @@
 
   
 </script>
+
 
 </body>
 </html>
